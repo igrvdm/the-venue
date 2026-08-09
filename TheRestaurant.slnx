@@ -1,6 +1,0 @@
-<Solution>
-  <Folder Name="/src/">
-    <Project Path="src/TheRestaurant.Api/TheRestaurant.Api.csproj" />
-    <Project Path="src/TheRestaurant.Domain/TheRestaurant.Domain.csproj" />
-  </Folder>
-</Solution>

@@ -1,0 +1,2 @@
+GET {{admin}}/admin/venue/{{venueId}}/zones
+Accept: application/json

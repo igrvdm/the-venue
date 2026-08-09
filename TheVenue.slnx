@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src\TheVenue.AdminApi\TheVenue.AdminApi.csproj" />
+    <Project Path="src\TheVenue.Api\TheVenue.Api.csproj" />
+    <Project Path="src\TheVenue.Domain\TheVenue.Domain.csproj" />
+  </Folder>
+</Solution>
