@@ -1,2 +1,2 @@
-GET {{admin}}/admin/venue/{{venueId}}/zones
+GET {{admin}}/admin/venues/{{venueId}}/zones
 Accept: application/json

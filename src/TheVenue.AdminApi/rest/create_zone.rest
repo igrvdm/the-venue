@@ -1,0 +1,15 @@
+POST {{admin}}/admin/venues/{{venueId}}/zones
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "some-fun-zone",
+  "tables": [
+    {
+      "amount": 3, "capacity": 4
+    },
+    {
+      "amount": 2, "capacity": 5
+    }
+  ]
+}

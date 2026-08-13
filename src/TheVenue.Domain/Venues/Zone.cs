@@ -1,4 +1,6 @@
-namespace TheVenue.Domain.Locations;
+using TheVenue.Domain.Locations;
+
+namespace TheVenue.Domain.Venues;
 
 public sealed record Zone(ZoneId Id, ZoneName Name, Dictionary<TableNumber, ZoneTable> Tables);
 
