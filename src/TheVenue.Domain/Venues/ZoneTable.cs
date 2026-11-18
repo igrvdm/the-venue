@@ -1,4 +1,4 @@
-namespace TheVenue.Domain.Locations;
+namespace TheVenue.Domain.Venues;
 
 public sealed record ZoneTable(TableCapacity Capacity);
 

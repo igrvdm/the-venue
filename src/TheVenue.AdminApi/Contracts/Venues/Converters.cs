@@ -25,3 +25,4 @@ public static class Converters
         return new Zone(Name: new(createRequest.Name), Id: new(Guid.NewGuid()), Tables: tables);
     }
 }
+
