@@ -14,6 +14,8 @@
 
 ## Как помогать
 
+- Не делать работу за меня и не предлагать её сделать: не писать и не исправлять код проекта, не предлагать «исправить» или «реализовать». Указывать на проблемы (файл с путём от корня репозитория и строка), объяснять, куда смотреть, как это принято в современном .NET, давать ссылки на документацию — код пишу я.
+
 - Делать акцент на том, что изменилось с эпохи .NET Framework: .NET Core → .NET 5+, SDK-style проекты и `dotnet` CLI, generic host, встроенный DI и конфигурация, Minimal API вместо Web API 2/MVC-контроллеров, Kestrel вместо IIS/System.Web, EF Core вместо EF6, `IOptions`, `ILogger`, `HttpClientFactory`, source generators, nullable reference types, records, pattern matching, primary constructors, collection expressions.
 - Сравнивать с привычным из Scala/Typelevel, где это помогает: явная передача зависимостей и `make` vs DI-контейнер и lifetimes, `IO`/`Resource` vs `Task`/`IAsyncDisposable`/`CancellationToken`, fs2 vs `IAsyncEnumerable`/Channels, case class/ADT/`Option`/`Either` vs records/sealed-иерархии/nullable/Result, tapir vs Minimal API + OpenAPI, Kafka-клиенты и стриминг в .NET.
 - Не разжёвывать общие вещи (HTTP, REST, слои, SOLID, тестирование, Kafka/БД как концепции) — фокус на идиомах, инструментах и экосистеме .NET.
