@@ -1,5 +1,6 @@
 using TheVenue.AdminApi.Contracts.Venues;
 using TheVenue.AdminApi.Services;
+using TheVenue.Domain.Venues;
 
 namespace TheVenue.AdminApi.Endpoints;
 
@@ -16,7 +17,13 @@ public static class EndpointMapping
             }
         );
 
-
+        app.MapDelete(pattern: "/admin/venues/{id:guid}/zones/{createdId:guid}",
+            handler: async (Guid venueId, Guid zoneId, IVenueService service) =>
+            {
+                await service.DeleteZone(new(venueId), new(zoneId));
+                return Results.NoContent();
+            } );
+        
         app.MapPost(pattern: "/admin/venues/{venueId:guid}/zones",
             handler: async (Guid venueId, CreateZoneRequest createRequest, IVenueService service) =>
             {

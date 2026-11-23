@@ -31,4 +31,9 @@ public class StubVenueService : IVenueService
     {
         return Task.FromResult(zone.Id);
     }
+
+    public Task DeleteZone(VenueId venueId, ZoneId zone)
+    {
+        return Task.CompletedTask;
+    }
 }
