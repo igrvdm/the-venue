@@ -22,14 +22,14 @@ public static class EndpointMapping
             {
                 await service.DeleteZone(new(venueId), new(zoneId));
                 return Results.NoContent();
-            } );
-        
+            });
+
         app.MapPost(pattern: "/admin/venues/{venueId:guid}/zones",
             handler: async (Guid venueId, CreateZoneRequest createRequest, IVenueService service) =>
             {
                 var zone = createRequest.ToZone();
                 var createdId = await service.CreateZone(venueId: new(venueId), zone);
-                return Results.Created($"/admin/venues/{venueId}/zones/{createdId.Value}", new {id = createdId});
+                return Results.Created($"/admin/venues/{venueId}/zones/{createdId.Value}", new { id = createdId });
             }
         );
     }

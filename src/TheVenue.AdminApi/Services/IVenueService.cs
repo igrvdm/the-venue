@@ -8,5 +8,5 @@ public interface IVenueService
     Task<IReadOnlyCollection<Zone>> GetZones(VenueId venueId);
     Task<ZoneId> CreateZone(VenueId venueId, Zone zone);
     Task DeleteZone(VenueId venueId, ZoneId zone);
-    
+
 }
