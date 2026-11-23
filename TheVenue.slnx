@@ -1,4 +1,10 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="PROJECT.md" />
+  </Folder>
+  <Folder Name="/docs/">
+    <File Path="docs\learning-plan.md" />
+  </Folder>
   <Folder Name="/src/">
     <Project Path="src\TheVenue.AdminApi\TheVenue.AdminApi.csproj" />
     <Project Path="src\TheVenue.Api\TheVenue.Api.csproj" />
